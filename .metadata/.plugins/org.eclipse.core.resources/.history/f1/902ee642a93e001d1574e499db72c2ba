@@ -1,0 +1,27 @@
+
+public class main {
+
+	public static void main(String[] args) {
+
+		int beginningNumber = 100;
+
+		while (beginningNumber > 0) {
+			if (beginningNumber % 2 == 0) {
+				printInt("");
+				printString(beginningNumber + " is even");
+			} else {
+				printInt(beginningNumber);
+				printString(" is odd");
+			}
+			beginningNumber--;
+		}
+	}
+
+	public static void printInt(int theInt) {
+		System.out.print(theInt);
+	}
+
+	public static void printString(String theString) {
+		System.out.println(theString);
+	}
+}

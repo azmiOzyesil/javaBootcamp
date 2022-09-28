@@ -1,0 +1,12 @@
+package arkadaşSayılarJava;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		int sayı1 = 1, bolümler1 = 0;
+		int sayı2 = 1, bölümler2 = 0;
+		
+	}
+
+}

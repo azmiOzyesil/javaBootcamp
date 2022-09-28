@@ -1,0 +1,30 @@
+package mükemmelSayıBulma;
+
+public class main {
+
+	public static void main(String[] args) {
+
+		int başlangıçDeğeri = 9999;
+		int sayı = başlangıçDeğeri;
+		int bölenler = 0;
+
+		if (başlangıçDeğeri < 0)
+			System.out.println("Sayı negatif olamaz");
+
+		System.out.println("'Mükkemmel Sayı' bulma algoritması");
+		System.out.println(başlangıçDeğeri + " sayısından itibaren taranıyor...\n");
+		
+		for (int w = 0; w < başlangıçDeğeri; w++) {
+			for (int q = 2; q < sayı; q++) {
+				if (sayı % q == 0) {
+					bölenler += q;
+				}
+			}
+			if (bölenler + 1 == sayı && sayı != 1)
+				System.out.println(sayı + " mükemmel sayıdır.");
+			sayı--;
+			bölenler = 0;
+		}
+		System.out.println("\nPROGRAM SONU");
+	}
+}

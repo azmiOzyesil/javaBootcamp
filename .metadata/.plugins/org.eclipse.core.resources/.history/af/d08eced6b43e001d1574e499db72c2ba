@@ -1,0 +1,17 @@
+package classes;
+
+public class CustomerManager {
+
+	public void customerAdd(String name) {
+		System.out.println(name + "Müşteri Eklendi");
+	}
+
+	public void customerDelete() {
+		System.out.println("Müşteri Silindi");
+	}
+
+	public void customerUpdate() {
+		System.out.println("Müşteri Güncellendi");
+	}
+
+}

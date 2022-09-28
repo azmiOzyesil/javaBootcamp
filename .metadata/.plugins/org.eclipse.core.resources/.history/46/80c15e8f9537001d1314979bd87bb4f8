@@ -1,0 +1,16 @@
+package sayıBulma;
+
+public class main {
+
+	public static void main(String[] args) {
+		int[] numbers = new int[] { 1, 5, 1, 6, 5, 1, 6, 5, 1, 6, 5, 1, 5, 1, 5, 1, 6, 3, 5, 6, 5, 1, 4, 8, 0 };
+		int desiredNumber = 1;
+		int counter = 0;
+
+		for (int number : numbers) {
+			if (number == desiredNumber)
+				counter++;
+		}
+		System.out.println("Toplamda " + counter + " tane bulundu");
+	}
+}

@@ -1,0 +1,26 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		int baslangicDegeri = 100;
+		int asalSayac = 0;
+
+		while (baslangicDegeri >= 1) {
+			for (int a = 2; a < baslangicDegeri; a++) {
+				if (baslangicDegeri % a != 0) {
+					asalSayac++;
+				}
+			}
+			if (asalSayac == (baslangicDegeri - 2)) {
+				System.out.println(baslangicDegeri + " asaldır");
+				asalSayac = 0;
+			} else {
+				// System.out.println(baslangicDegeri + " asal değildir");
+				asalSayac = 0;
+			}
+
+			baslangicDegeri--;
+		}
+	}
+}

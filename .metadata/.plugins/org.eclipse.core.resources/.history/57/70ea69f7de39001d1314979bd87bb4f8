@@ -1,0 +1,18 @@
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		Product product1 = new Product();
+		
+		product1.id = 123456;
+		product1.name = "Bisiklet";
+		product1.unitPrice = 25000;//TL
+		product1.discount = 10;
+		product1.unitPrice = 26;
+		product1.imageUrl = "bycyle.png";
+		
+		System.out.println(product1.id);
+	}
+
+}

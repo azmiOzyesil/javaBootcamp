@@ -1,0 +1,14 @@
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+	
+	public static void printScreen(String theString) {
+		System.out.println(theString);
+	}
+
+}

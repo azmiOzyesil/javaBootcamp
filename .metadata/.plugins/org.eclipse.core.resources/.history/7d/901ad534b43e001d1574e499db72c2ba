@@ -1,0 +1,9 @@
+package classes;
+
+public class CustomerManager {
+	
+	public void customerAdd() {
+		System.out.println("Müşteri Eklendi");
+	}
+
+}

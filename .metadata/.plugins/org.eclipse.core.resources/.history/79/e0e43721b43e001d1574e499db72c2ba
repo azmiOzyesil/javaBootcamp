@@ -1,0 +1,7 @@
+package classes;
+
+public class CustomerManager {
+	
+	public void add()
+
+}

@@ -1,0 +1,23 @@
+
+public class main {
+	
+
+	// Not: Burada hocanın aynısını yazmak yerine aynı mantıkta farklı bir algoritma yazdım.
+	public static void main(String[] args) {
+
+		int beginningNumber = 100;
+
+		while (beginningNumber > 0) {
+			if (beginningNumber % 2 == 0) {
+				printConsole(beginningNumber + " is even");
+			} else {
+				printConsole(beginningNumber + " is odd");
+			}
+			beginningNumber--;
+		}
+	}
+
+	public static void printConsole(String theString) {
+		System.out.println(theString);
+	}
+}

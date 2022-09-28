@@ -1,0 +1,22 @@
+package mükemmelSayıBulma;
+
+public class main {
+
+	public static void main(String[] args) {
+
+		int başlangıçDeğeri = 495;
+		int bölenler = 0;
+		int bölenlerSayaç = 0;
+
+		for (int q = 1; q < başlangıçDeğeri; q++) {
+			if (başlangıçDeğeri % q == 0) {
+				bölenler += q;
+				bölenlerSayaç++;
+			}
+		}
+		if (bölenler == başlangıçDeğeri)
+			System.out.println(başlangıçDeğeri + " mükemmel sayıdır");
+		else
+			System.out.println("Bölen sayıların toplamı = " + bölenler + ". Mükemmel sayı değildir");
+	}
+}

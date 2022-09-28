@@ -1,0 +1,72 @@
+package kalınİnceHarfBulma;
+
+import java.util.stream.BaseStream;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		// İnce Harfler
+		char eHarfi = 'e', iHarfi = 'i', öHarfi = 'ö', üHarfi = 'ü';
+		// Kalın Harfler
+		char aHarfi = 'e', ıHarfi = 'i', oHarfi = 'ö', uHarfi = 'ü';
+
+		String kelimemiz = "Teknoloji";
+		int eHarfiTespit = 0, iHarfiTespit = 0, öHarfiTespit = 0, üHarfiTespit = 0;
+		int aHarfiTespit = 0, ıHarfiTespit = 0, oHarfiTespit = 0, uHarfiTespit = 0;
+		int ünsüzHarfTespit = 0;
+
+		for (int i = 0; i < kelimemiz.length(); i++) {
+			if (eHarfi == kelimemiz.charAt(i)) {
+				eHarfiTespit++;
+			} else if (iHarfi == kelimemiz.charAt(i)) {
+				iHarfiTespit++;
+			} else if (öHarfi == kelimemiz.charAt(i)) {
+				öHarfiTespit++;
+			} else if (üHarfi == kelimemiz.charAt(i)) {
+				üHarfiTespit++;
+			} else if (aHarfi == kelimemiz.charAt(i)) {
+				aHarfiTespit++;
+			} else if (ıHarfi == kelimemiz.charAt(i)) {
+				ıHarfiTespit++;
+			} else if (oHarfi == kelimemiz.charAt(i)) {
+				oHarfiTespit++;
+			} else if (uHarfi == kelimemiz.charAt(i)) {
+				uHarfiTespit++;
+			} else
+				ünsüzHarfTespit++;
+		}
+		if (eHarfiTespit > 0) {
+			System.out.println(eHarfiTespit + " tane e harfi bulundu");
+		}
+		if (iHarfiTespit > 0) {
+			System.out.println(iHarfiTespit + " tane i harfi bulundu");
+		}
+		if (öHarfiTespit > 0) {
+			System.out.println(öHarfiTespit + " tane ö harfi bulundu");
+		}
+		if (üHarfiTespit > 0) {
+			System.out.println(üHarfiTespit + " tane ü harfi bulundu");
+		}
+		if (aHarfiTespit > 0) {
+			System.out.println(aHarfiTespit + " tane a harfi bulundu");
+		}
+		if (ıHarfiTespit > 0) {
+			System.out.println(ıHarfiTespit + " tane ı harfi bulundu");
+		}
+		if (oHarfiTespit > 0) {
+			System.out.println(oHarfiTespit + " tane o harfi bulundu");
+		}
+		if (uHarfiTespit > 0) {
+			System.out.println(uHarfiTespit + " tane u harfi bulundu");
+		}
+		if (ünsüzHarfTespit > 0)
+			System.out.println(ünsüzHarfTespit + " tane ünsüz harfi bulundu");
+		System.out
+				.println(
+						"Toplam "
+								+ (eHarfiTespit + iHarfiTespit + öHarfiTespit + üHarfiTespit + aHarfiTespit
+										+ ıHarfiTespit + oHarfiTespit + uHarfiTespit + ünsüzHarfTespit)
+								+ " adet harf bulundu");
+	}
+}

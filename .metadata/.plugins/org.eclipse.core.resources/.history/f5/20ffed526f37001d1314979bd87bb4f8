@@ -1,0 +1,38 @@
+package kalınİnceHarfBulma;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		char eHarfi = 'e', iHarfi = 'i', öHarfi = 'ö', üHarfi = 'ü';
+		String kelimemiz = "Teknoloji";
+		int eHarfiTespit = 0, iHarfiTespit = 0, öHarfiTespit = 0, üHarfiTespit = 0;
+
+		for (int i = 0; i < kelimemiz.length(); i++) {
+			if (eHarfi == kelimemiz.charAt(i)) {
+				eHarfiTespit++;
+			}
+			else if (iHarfi == kelimemiz.charAt(i)) {
+				iHarfiTespit++;
+			}
+			else if (öHarfi == kelimemiz.charAt(i)) {
+				öHarfiTespit++;
+			}
+			else if (üHarfi == kelimemiz.charAt(i)) {
+				üHarfiTespit++;
+			}
+		}
+		if (eHarfiTespit > 0) {
+			System.out.println(eHarfiTespit + " tane e harfi bulundu");
+		}
+		if (iHarfiTespit > 0) {
+			System.out.println(iHarfiTespit + " tane i harfi bulundu");
+		}
+		if (öHarfiTespit > 0) {
+			System.out.println(öHarfiTespit + " tane ö harfi bulundu");
+		}
+		if (üHarfiTespit > 0) {
+			System.out.println(üHarfiTespit + " tane ü harfi bulundu");
+		}
+	}
+}

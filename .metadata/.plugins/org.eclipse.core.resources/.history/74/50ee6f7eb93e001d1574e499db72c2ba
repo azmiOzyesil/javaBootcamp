@@ -1,0 +1,12 @@
+package classesWithAttributes;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Product myProduct = new Product();
+		
+		myProduct.name = "iPhone 14";
+		myProduct.description = "";
+	}
+
+}

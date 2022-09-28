@@ -1,0 +1,11 @@
+package inheritance;
+
+public class EmployeeManager {
+	public void add() {
+		System.out.println("Müşteri Eklendi");
+	}
+
+	public void list() {
+		System.out.println("Müşeriler Listelendi");
+	}
+}

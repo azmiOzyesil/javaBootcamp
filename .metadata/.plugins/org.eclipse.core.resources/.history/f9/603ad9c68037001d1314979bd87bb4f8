@@ -1,0 +1,22 @@
+package arkadaşSayılarJava;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		int sayı1 = 220, bölümler1 = 0;
+		int sayı2 = 284, bölümler2 = 0;
+
+		for (int a = 2; a < sayı2;) {
+			if (sayı1 % a == 0)
+				bölümler1 += a;
+			if (sayı2 % a == 0)
+				bölümler2 += a;
+		}
+		if (bölümler1 == bölümler2)
+			System.out.println(sayı1 + " ve " + sayı2 + "kardeştir");
+		else
+			System.out.println(sayı1 + " ve " + sayı2 + "kardeş değildir");
+		System.out.println("SON");
+	}
+}

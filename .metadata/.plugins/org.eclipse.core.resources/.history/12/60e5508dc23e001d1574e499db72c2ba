@@ -1,0 +1,9 @@
+package methodOverloading;
+
+public class FourOperations {
+
+	public int add(int a, int b) {
+		return a + b;
+	}
+
+}

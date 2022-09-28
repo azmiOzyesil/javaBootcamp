@@ -1,0 +1,20 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		int baslangicDegeri = 100;
+		int asalSayi = 0;
+
+		while (baslangicDegeri > 2) {
+			for (int a = 2; a < baslangicDegeri; a++) {
+				if (baslangicDegeri % a == 0) {
+
+					break;
+				} else
+					System.out.println(baslangicDegeri);
+			}
+			baslangicDegeri--;
+		}
+	}
+}

@@ -1,0 +1,24 @@
+package mükemmelSayıBulma;
+
+public class main {
+
+	public static void main(String[] args) {
+
+		int başlangıçDeğeri = 1000;
+		int bölenler = 0;
+
+		for (int w = 0; w < başlangıçDeğeri; w++) {
+			for (int q = 2; q < başlangıçDeğeri; q++) {
+				if (başlangıçDeğeri % q == 0) {
+					bölenler += q;
+				}
+			}
+			if (bölenler+1 == başlangıçDeğeri) {
+				System.out.println(başlangıçDeğeri + " mükemmel sayıdır");
+				
+			}
+			başlangıçDeğeri--;bölenler = 0;
+		}
+		System.out.println("SON");
+	}
+}

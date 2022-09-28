@@ -1,0 +1,17 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		int baslangicDegeri = 100;
+		int asalSayi = 0;
+
+		for (int a = baslangicDegeri; a < 2; a--) {
+			for(int b=;)
+			if (baslangicDegeri % a == 0) {
+				System.out.println(baslangicDegeri);
+			}
+			baslangicDegeri--;
+		}
+	}
+}

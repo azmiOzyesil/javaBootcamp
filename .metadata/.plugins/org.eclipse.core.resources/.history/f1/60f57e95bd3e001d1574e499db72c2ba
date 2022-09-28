@@ -1,0 +1,52 @@
+package classesWithAttributes;
+
+public class Product {
+
+	// Attribute || field
+	String name;
+
+	private String getName() {
+		return name;
+	}
+
+	private void setName(String name) {
+		this.name = name;
+	}
+
+	private String getDescription() {
+		return description;
+	}
+
+	private void setDescription(String description) {
+		this.description = description;
+	}
+
+	private double getPrice() {
+		return price;
+	}
+
+	private void setPrice(double price) {
+		this.price = price;
+	}
+
+	private int getId() {
+		return id;
+	}
+
+	private void setId(int id) {
+		this.id = id;
+	}
+
+	private int getStockAmount() {
+		return stockAmount;
+	}
+
+	private void setStockAmount(int stockAmount) {
+		this.stockAmount = stockAmount;
+	}
+
+	String description;
+	double price;
+	int id;
+	int stockAmount;
+}

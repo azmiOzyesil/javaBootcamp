@@ -1,0 +1,10 @@
+package methodOverloading;
+
+public class Main {
+	public static void main(String[] args) {
+		FourOperations myFourOperations = new FourOperations();
+
+		myFourOperations.add(5, 8, 13);
+	}
+
+}

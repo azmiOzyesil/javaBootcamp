@@ -1,0 +1,24 @@
+
+public class main {
+
+	public static void main(String[] args) {
+
+		int beginningNumber = 100;
+
+		while (beginningNumber > 0) {
+			if (beginningNumber % 2 == 0) {
+				printString(" is even");
+			}
+				
+		}
+
+	}
+
+	public static void printInt(String theString) {
+		
+	}
+	public static void printString(String theString) {
+		System.out.println(theString);
+	}
+
+}

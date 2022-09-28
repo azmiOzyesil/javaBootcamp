@@ -1,0 +1,35 @@
+
+public class main {
+
+	public static void main(String[] args) {
+
+		Product product1 = new Product();
+
+		product1.id = 45863;
+		product1.name = "Bianchi Bisiklet";
+		product1.unitPrice = 25000;// TL
+		product1.discount = 10;
+		product1.unitPrice = 26;
+		product1.imageUrl = "bycyleBianchi.png";
+
+		Product product2 = new Product();
+
+		product2.id = 45863;
+		product2.name = "Ümit Bisiklet";
+		product2.unitPrice = 25000;// TL
+		product2.discount = 10;
+		product2.unitPrice = 26;
+		product2.imageUrl = "bycyleUmit.png";
+
+		Product product3 = new Product();
+
+		product3.id = 45863;
+		product3.name = "Bisan Bisiklet";
+		product3.unitPrice = 25000;// TL
+		product3.discount = 10;
+		product3.unitPrice = 26;
+		product3.imageUrl = "bycyle.png";
+
+	}
+
+}

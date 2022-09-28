@@ -1,0 +1,13 @@
+package inheritance;
+
+public class CustomerManager {
+	
+	public void add() {
+		System.out.println("Müşteri Eklendi");
+	}
+	
+	public void list() {
+		System.out.println("Müşeriler Listelendi");
+	}
+
+}

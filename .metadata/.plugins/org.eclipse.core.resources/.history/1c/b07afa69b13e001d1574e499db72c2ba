@@ -1,0 +1,22 @@
+
+public class main {
+
+	public static void main(String[] args) {
+		int number1 = 20, number2 = 9;
+
+		System.out.println(sum(number1, number2));
+	}
+
+	public static int sum(int first, int second) {
+		return first + second;
+	}
+
+	public static int sumAll(int... num) {
+
+		for (int numbers : num) {
+		}
+
+		return 0;
+	}
+
+}
