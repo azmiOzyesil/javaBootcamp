@@ -1,0 +1,65 @@
+package kodlama.io.softwareCourse.business.consretes;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import kodlama.io.softwareCourse.business.abstracts.LanguageService;
+import kodlama.io.softwareCourse.dataAccess.abstracts.LanguageRepository;
+import kodlama.io.softwareCourse.dataAccess.concretes.InMemoryLanguageRepository;
+import kodlama.io.softwareCourse.entities.concretes.Language;
+
+@Service
+public class LanguageManager implements LanguageService {
+	private LanguageRepository languageRepository;
+	private InMemoryLanguageRepository inMemoryRepository;
+	private List<Language> language;
+
+	public LanguageManager(LanguageRepository languageRepository, InMemoryLanguageRepository inMemoryRepository,
+			List<Language> language) {
+		this.languageRepository = languageRepository;
+		this.inMemoryRepository = inMemoryRepository;
+		this.language = language;
+	}
+
+	@Override
+	public List<Language> getAll() {
+
+		return languageRepository.getAll();
+	}
+	
+	@Override
+	public void add(Language language) {
+
+		for (Language language1 : this.language) {
+			if (language1.getName().equals(language1.getName()))
+				System.out.println("Name can not be repeated!");
+			else if (language1.getName().isEmpty())
+				System.out.println("Name can not be empty!");
+			else
+				this.language.add(language);
+		}
+	}
+
+	@Override
+	public void delete(int id) {
+		languageRepository.delete(id);
+	}
+	
+	@Override
+	public void update(Language language) {
+		languageRepository.update(language);
+	}
+
+	@Override
+	public Language getById(int id) {
+		return languageRepository.getById(id);
+	}
+
+	@Override
+	public Language getByName(String name) {
+		return languageRepository.getByName(name);
+	}
+
+}

@@ -1,0 +1,13 @@
+package kodlama.io.softwareCourse.dataAccess.abstracts;
+
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
+import kodlama.io.softwareCourse.entities.concretes.Language;
+
+@Repository
+public interface LanguageRepository {
+	List<Language> getAll();
+
+}

@@ -1,0 +1,8 @@
+package kodlama.io.softwareCourse.dataAccess.abstracts;
+
+import kodlama.io.softwareCourse.entities.concretes.Language;
+
+public interface LanguageRepository {
+	Language[] getAll();
+
+}

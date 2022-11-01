@@ -1,0 +1,24 @@
+package kodlama.io.softwareCourse.dataAccess.concretes;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import kodlama.io.softwareCourse.dataAccess.abstracts.LanguageRepository;
+import kodlama.io.softwareCourse.entities.concretes.Language;
+
+public class InMemoryLanguageRepository implements LanguageRepository{
+
+	List<Language> languages;
+	
+	public InMemoryLanguageRepository() {
+		languages = new ArrayList<Language>();
+		languages.add(new Language(1, "C#"));
+	}
+
+	@Override
+	public List<Language> getAll() {
+		
+		return null;
+	}
+
+}

@@ -1,0 +1,10 @@
+package kodlama.io.softwareCourse.dataAccess.abstracts;
+
+import java.util.List;
+
+import kodlama.io.softwareCourse.entities.concretes.Language;
+
+public interface LanguageRepository {
+	List<Language> getAll();
+
+}
